@@ -1,0 +1,32 @@
+/* ============================
+   Variables CSS
+   ============================ */
+:root {
+    --primary-color: #FFD700;
+    --secondary-color: #1a1a1a;
+    --accent-color: #FFC700;
+    --dark-bg: #000000;
+    --darker-bg: #0d0d0d;
+    --text-dark: #1a1a1a;
+    --text-light: #666;
+    --text-white: #ffffff;
+    --bg-light: #f8f9fa;
+    --bg-white: #ffffff;
+    --border-color: #e0e0e0;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.2);
+    --shadow-yellow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    --shadow-yellow-lg: 0 6px 20px rgba(255, 215, 0, 0.4);
+    --transition: all 0.3s ease;
+    --border-radius: 12px;
+    --max-width: 1200px;
+    
+    /* Tipografías */
+    --font-primary: 'Poppins', sans-serif;
+    --font-display: 'Bebas Neue', cursive;
+    --font-elegant: 'Playfair Display', serif;
+    --font-bold: 'Oswald', sans-serif;
+    --font-modern: 'Montserrat', sans-serif;
+    --font-clean: 'Raleway', sans-serif;
+}

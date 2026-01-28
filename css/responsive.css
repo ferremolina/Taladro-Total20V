@@ -1,0 +1,450 @@
+/* ============================
+   Responsive Design
+   ============================ */
+@media (max-width: 968px) {
+    .section__title {
+        font-size: 2rem;
+    }
+    
+    .hero__title {
+        font-size: 2.5rem;
+    }
+    
+    .hero__subtitle {
+        font-size: 1rem;
+    }
+    
+    /* Problem Section Split Screen */
+    .problem__layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .problem__pain-title,
+    .problem__solution-title {
+        font-size: 2rem;
+    }
+    
+    /* For Who Section */
+    .for-who__grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .for-who__benefits {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Testimonials */
+    .testimonials__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .testimonials__stats {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .bonuses__grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing__amount {
+        font-size: 4rem;
+    }
+    
+    .pricing__badges {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .countdown__item {
+        min-width: 70px;
+        padding: 16px;
+    }
+    
+    .countdown__number {
+        font-size: 2rem;
+    }
+    
+    .product__featured-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .product__card--featured {
+        transform: scale(1);
+    }
+    
+    /* Pricing Box */
+    .product__price-value-special {
+        font-size: 2.5rem;
+    }
+    
+    /* CTA Price Highlight */
+    .cta__price-current {
+        font-size: 2.5rem;
+    }
+    
+    .cta__discount-badge {
+        font-size: 1.25rem;
+        padding: 10px 20px;
+    }
+    
+    .cta__trust {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav__menu {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: var(--bg-white);
+        flex-direction: column;
+        padding: 32px;
+        box-shadow: var(--shadow-md);
+        transform: translateY(-200%);
+        transition: var(--transition);
+    }
+    
+    .nav__menu.active {
+        transform: translateY(0);
+    }
+    
+    .nav__toggle {
+        display: flex;
+    }
+    
+    .hero {
+        padding: 120px 0 60px;
+    }
+    
+    .hero__title {
+        font-size: 2rem;
+    }
+    
+    .hero__subtitle {
+        font-size: 1rem;
+    }
+    
+    /* Problem Section */
+    .problem__pain,
+    .problem__solution-side {
+        padding: 30px;
+    }
+    
+    .problem__pain-title,
+    .problem__solution-title {
+        font-size: 1.75rem;
+    }
+    
+    .problem__stat-number {
+        font-size: 2.5rem;
+    }
+    
+    /* For Who Section */
+    .for-who__card {
+        padding: 30px;
+    }
+    
+    .for-who__icon {
+        font-size: 3rem;
+    }
+    
+    .for-who__benefits {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+    
+    /* Testimonials */
+    .testimonials__grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .testimonial__card {
+        padding: 25px;
+    }
+    
+    .testimonials__stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .pricing__title {
+        font-size: 1.75rem;
+    }
+    
+    .pricing__amount {
+        font-size: 3.5rem;
+    }
+    
+    .for-who__social-proof {
+        flex-direction: column;
+    }
+    
+    .products__grid,
+    .benefits__grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Pricing Box */
+    .product__price-box {
+        padding: 25px;
+    }
+    
+    .product__price-old .product__price-value {
+        font-size: 1.25rem;
+    }
+    
+    .product__price-value-special {
+        font-size: 2rem;
+    }
+    
+    .product__savings {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    
+    /* CTA Price */
+    .cta__price-highlight {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .cta__price-old {
+        font-size: 1.25rem;
+    }
+    
+    .cta__price-current {
+        font-size: 2rem;
+    }
+    
+    .cta__discount-badge {
+        font-size: 1.125rem;
+    }
+    
+    .guarantee__content {
+        padding: 40px 24px;
+    }
+    
+    .faq__question {
+        font-size: 1rem;
+        padding: 20px 24px;
+    }
+    
+    .modal__content {
+        padding: 24px;
+    }
+    
+    .cta__trust {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .cta__title {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero__title {
+        font-size: 1.75rem;
+    }
+    
+    .section__title {
+        font-size: 1.5rem;
+    }
+    
+    .btn {
+        padding: 12px 24px;
+        font-size: 0.9375rem;
+    }
+    
+    .btn--large {
+        padding: 14px 32px;
+    }
+    
+    /* Problem Section */
+    .problem__pain,
+    .problem__solution-side {
+        padding: 20px;
+    }
+    
+    .problem__pain-title,
+    .problem__solution-title {
+        font-size: 1.5rem;
+    }
+    
+    .problem__pain-item,
+    .problem__solution-item {
+        padding: 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .problem__stat-number {
+        font-size: 2rem;
+    }
+    
+    /* For Who Section */
+    .for-who__card {
+        padding: 25px;
+    }
+    
+    .for-who__card-title {
+        font-size: 1.25rem;
+    }
+    
+    .for-who__icon {
+        font-size: 2.5rem;
+    }
+    
+    /* Testimonials */
+    .testimonial__card {
+        padding: 20px;
+    }
+    
+    .testimonial__text {
+        font-size: 0.875rem;
+    }
+    
+    .testimonials__stats {
+        padding: 30px 20px;
+    }
+    
+    .testimonials__stat-number {
+        font-size: 2rem;
+    }
+    
+    .testimonials__stat-text {
+        font-size: 0.875rem;
+    }
+    
+    .product__featured-title {
+        font-size: 1.25rem;
+    }
+    
+    .product__featured-grid {
+        padding: 20px;
+    }
+    
+    /* Pricing Box */
+    .product__price-box {
+        padding: 20px;
+    }
+    
+    .product__price-label {
+        font-size: 0.8125rem;
+    }
+    
+    .product__price-old .product__price-value {
+        font-size: 1.125rem;
+    }
+    
+    .product__price-value-special {
+        font-size: 1.75rem;
+    }
+    
+    .product__savings {
+        font-size: 0.9375rem;
+        padding: 10px 16px;
+    }
+    
+    /* CTA Section */
+    .cta__price-old {
+        font-size: 1.125rem;
+    }
+    
+    .cta__price-current {
+        font-size: 1.75rem;
+    }
+    
+    .cta__discount-badge {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+    
+    .cta__title {
+        font-size: 1.5rem;
+    }
+    
+    .countdown {
+        gap: 8px;
+    }
+    
+    .countdown__item {
+        min-width: 60px;
+        padding: 12px;
+    }
+    
+    .countdown__number {
+        font-size: 1.75rem;
+    }
+    
+    .pricing__amount {
+        font-size: 3rem;
+    }
+    
+    /* Modal Adjustments */
+    .modal__content {
+        max-width: 95%;
+        padding: 20px;
+    }
+    
+    .modal__title {
+        font-size: 1.25rem;
+    }
+}
+    }
+    
+    .product__featured-title {
+        font-size: 1.5rem;
+    }
+    
+    .countdown {
+        gap: 8px;
+    }
+    
+    .countdown__item {
+        min-width: 60px;
+        padding: 12px;
+    }
+    
+    .countdown__number {
+        font-size: 1.75rem;
+    }
+    
+    .pricing__amount {
+        font-size: 3rem;
+    }
+}
+
+/* Utilidad para elementos con animación */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    color: var(--text-dark);
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: var(--shadow-yellow);
+    font-weight: 700;
+}
+
+.back-to-top:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-yellow-lg);
+}
