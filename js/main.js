@@ -68,6 +68,98 @@ const WOMPI_PAYMENT_LINK = 'https://checkout.wompi.co/l/RO6Vjz';
 // Ejemplo: 'https://checkout.wompi.co/l/ABC123XYZ'
 
 // ============================
+// Eventos de Conversión - Tracking
+// ============================
+
+// Función helper para enviar eventos
+function trackEvent(eventName, eventParams = {}) {
+    // Google Analytics
+    if (typeof gtag !== 'undefined') {
+        gtag('event', eventName, eventParams);
+        console.log('GA Event:', eventName, eventParams);
+    }
+    
+    // Facebook Pixel
+    if (typeof fbq !== 'undefined') {
+        fbq('track', eventName, eventParams);
+        console.log('FB Event:', eventName, eventParams);
+    }
+}
+
+// Tracking de clicks en botones de compra
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Botones "Comprar Ahora"
+    const buyButtons = document.querySelectorAll('.btn--primary, [onclick*="openPurchaseModal"]');
+    buyButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            trackEvent('add_to_cart', {
+                event_category: 'ecommerce',
+                event_label: 'Click Comprar Ahora',
+                value: 390000,
+                currency: 'COP'
+            });
+        });
+    });
+    
+    // 2. Clicks en WhatsApp
+    const whatsappLinks = document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp"], .whatsapp-float');
+    whatsappLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            trackEvent('contact', {
+                event_category: 'engagement',
+                event_label: 'Click WhatsApp',
+                method: 'whatsapp'
+            });
+        });
+    });
+    
+    // 3. Scroll tracking - Usuario interesado
+    let scrollTracked = false;
+    window.addEventListener('scroll', () => {
+        if (!scrollTracked && window.scrollY > window.innerHeight * 0.5) {
+            trackEvent('scroll', {
+                event_category: 'engagement',
+                event_label: 'Scroll 50%'
+            });
+            scrollTracked = true;
+        }
+    });
+    
+    // 4. Click en teléfono
+    const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+    phoneLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            trackEvent('contact', {
+                event_category: 'engagement',
+                event_label: 'Click Teléfono',
+                method: 'phone'
+            });
+        });
+    });
+    
+    // 5. Ver precios (cuando llega a sección pricing)
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                trackEvent('view_item', {
+                    event_category: 'ecommerce',
+                    event_label: 'Ver Precios',
+                    value: 390000,
+                    currency: 'COP'
+                });
+                observer.disconnect(); // Solo una vez
+            }
+        });
+    }, { threshold: 0.5 });
+    
+    const pricingSection = document.querySelector('.pricing');
+    if (pricingSection) {
+        observer.observe(pricingSection);
+    }
+});
+
+
+// ============================
 // Navigation Toggle (Mobile)
 // ============================
 const navToggle = document.getElementById('nav-toggle');
