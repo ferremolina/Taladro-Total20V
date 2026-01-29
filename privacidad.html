@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad | FERREMOLINA</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .legal-page {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 25px 80px;
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 30px;
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.95);
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .back-link:hover {
+            background: #667eea;
+            color: white;
+            transform: translateX(-5px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .back-link::before {
+            content: '←';
+            font-size: 1.2em;
+            transition: transform 0.3s ease;
+        }
+
+        .back-link:hover::before {
+            transform: translateX(-3px);
+        }
+        
+        .legal-header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 50px 30px;
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .legal-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+        }
+
+        .legal-header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: -1px;
+        }
+
+        .update-date {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .legal-section {
+            background: rgba(255, 255, 255, 0.98);
+            margin-bottom: 30px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.6s ease-out backwards;
+        }
+
+        .legal-section:nth-child(1) { animation-delay: 0.1s; }
+        .legal-section:nth-child(2) { animation-delay: 0.15s; }
+        .legal-section:nth-child(3) { animation-delay: 0.2s; }
+        .legal-section:nth-child(4) { animation-delay: 0.25s; }
+
+        .legal-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+        }
+
+        .legal-section h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            padding-left: 20px;
+            border-left: 5px solid #667eea;
+            font-weight: 700;
+            position: relative;
+        }
+
+        .legal-section h2::before {
+            content: '';
+            position: absolute;
+            left: -40px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 8px;
+            background: #667eea;
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.2);
+        }
+
+        .legal-section h3 {
+            font-size: 1.4rem;
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .legal-section h3::before {
+            content: '▸';
+            color: #667eea;
+            font-size: 0.8em;
+        }
+
+        .legal-section p {
+            margin-bottom: 18px;
+            text-align: justify;
+            color: #4a5568;
+            line-height: 1.9;
+        }
+
+        .legal-section ul, .legal-section ol {
+            margin-left: 35px;
+            margin-bottom: 25px;
+        }
+
+        .legal-section li {
+            margin-bottom: 12px;
+            padding-left: 10px;
+            color: #4a5568;
+            position: relative;
+        }
+
+        .legal-section ul li::marker {
+            color: #667eea;
+            font-size: 1.2em;
+        }
+
+        .legal-section strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+            border-left: 5px solid #667eea;
+            padding: 25px 30px;
+            margin: 30px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .highlight-box::before {
+            content: '⚡';
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 3rem;
+            opacity: 0.1;
+        }
+
+        .highlight-box strong {
+            color: #667eea;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin-top: 50px;
+            box-shadow: 0 10px 40px rgba(255, 152, 0, 0.15);
+            border: 2px solid rgba(255, 152, 0, 0.2);
+        }
+
+        .contact-info h2 {
+            border-left-color: #ff9800;
+            color: #e65100;
+        }
+
+        .contact-info h2::before {
+            background: #ff9800;
+            box-shadow: 0 0 0 4px rgba(255, 152, 0, 0.2);
+        }
+
+        .contact-info p {
+            line-height: 2;
+            color: #5d4037;
+        }
+
+        .contact-info a {
+            color: #d84315;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #ff5722;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .legal-page {
+                padding: 30px 20px 60px;
+            }
+
+            .legal-header {
+                padding: 35px 25px;
+                margin-bottom: 40px;
+            }
+
+            .legal-header h1 {
+                font-size: 2rem;
+            }
+
+            .legal-section {
+                padding: 30px 25px;
+            }
+
+            .legal-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .legal-section h3 {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Scrollbar personalizado */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #667eea, #764ba2);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, #764ba2, #f093fb);
+        }
+    </style>
+</head>
+<body>
+    <div class="legal-page">
+        <a href="index.html" class="back-link">← Volver a la tienda</a>
+        
+        <header class="legal-header">
+            <h1>Política de Privacidad</h1>
+            <p class="update-date">Última actualización: 29 de enero de 2026</p>
+        </header>
+
+        <div class="legal-section">
+            <h2>1. Información General</h2>
+            <p>FERREMOLINA (en adelante, "nosotros", "nuestro" o "la empresa"), con domicilio en Cra. 8bis #37-22, Pereira, Risaralda, Colombia, es responsable del tratamiento de los datos personales que usted proporcione a través de nuestro sitio web y servicios de comercio electrónico.</p>
+            <p>Esta Política de Privacidad establece los términos en que FERREMOLINA usa y protege la información que es proporcionada por sus usuarios al momento de utilizar nuestro sitio web y realizar compras en línea, en cumplimiento con la Ley 1581 de 2012 y el Decreto 1377 de 2013 de la República de Colombia.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>2. Información que Recopilamos</h2>
+            <p>Para procesar sus pedidos y brindarle un mejor servicio, recopilamos la siguiente información:</p>
+            
+            <h3>2.1 Información Personal de Identificación:</h3>
+            <ul>
+                <li>Nombre completo</li>
+                <li>Número de cédula o documento de identidad</li>
+                <li>Correo electrónico</li>
+                <li>Número de teléfono móvil</li>
+                <li>Dirección de envío completa (incluyendo ciudad y departamento)</li>
+            </ul>
+
+            <h3>2.2 Información de Pago:</h3>
+            <ul>
+                <li>Los pagos son procesados de forma segura por <strong>Wompi</strong> (plataforma de pagos certificada PCI-DSS)</li>
+                <li>FERREMOLINA NO almacena datos de tarjetas de crédito o débito en nuestros servidores</li>
+                <li>Solo recibimos confirmación de pagos aprobados o rechazados</li>
+            </ul>
+
+            <h3>2.3 Información Técnica y de Navegación:</h3>
+            <ul>
+                <li>Dirección IP</li>
+                <li>Tipo de navegador y dispositivo</li>
+                <li>Páginas visitadas y tiempo de navegación</li>
+                <li>Origen de la visita (Google, Facebook, directo)</li>
+                <li>Cookies y tecnologías similares</li>
+            </ul>
+        </div>
+
+        <div class="legal-section">
+            <h2>3. Uso de la Información</h2>
+            <p>Utilizamos la información recopilada para los siguientes propósitos:</p>
+            <ul>
+                <li><strong>Procesar pedidos:</strong> Gestionar, procesar y entregar sus compras</li>
+                <li><strong>Comunicación:</strong> Enviar confirmaciones de pedido, actualizaciones de envío y soporte al cliente</li>
+                <li><strong>Mejorar servicios:</strong> Analizar comportamiento de usuarios para optimizar nuestro sitio web</li>
+                <li><strong>Marketing:</strong> Enviar promociones y ofertas (solo si usted acepta recibir comunicaciones comerciales)</li>
+                <li><strong>Cumplimiento legal:</strong> Cumplir con obligaciones legales y tributarias</li>
+                <li><strong>Prevención de fraude:</strong> Detectar y prevenir actividades fraudulentas</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>⚠️ Importante:</strong> Nunca venderemos, alquilaremos o compartiremos su información personal con terceros para fines comerciales no relacionados con nuestros servicios.
+            </div>
+        </div>
+
+        <div class="legal-section">
+            <h2>4. Compartir Información con Terceros</h2>
+            <p>Compartimos su información únicamente con los siguientes terceros necesarios para cumplir con nuestros servicios:</p>
+            <ul>
+                <li><strong>Wompi:</strong> Procesador de pagos (solo información necesaria para transacciones)</li>
+                <li><strong>Empresas de mensajería:</strong> Para la entrega de productos (nombre, teléfono, dirección)</li>
+                <li><strong>Proveedores de hosting:</strong> Para almacenar datos en servidores seguros</li>
+                <li><strong>Google Analytics:</strong> Análisis anónimo de tráfico web</li>
+                <li><strong>Meta (Facebook/Instagram):</strong> Publicidad y seguimiento de conversiones</li>
+            </ul>
+            <p>Todos nuestros proveedores están obligados a mantener la confidencialidad de su información.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>5. Cookies y Tecnologías de Seguimiento</h2>
+            <p>Nuestro sitio web utiliza cookies y tecnologías similares para mejorar su experiencia de usuario:</p>
+            
+            <h3>5.1 Tipos de Cookies que Utilizamos:</h3>
+            <ul>
+                <li><strong>Cookies esenciales:</strong> Necesarias para el funcionamiento del sitio (carrito de compras, sesión)</li>
+                <li><strong>Cookies analíticas:</strong> Google Analytics para entender cómo usa nuestro sitio</li>
+                <li><strong>Cookies de publicidad:</strong> Meta Pixel (Facebook) para mostrar anuncios relevantes</li>
+            </ul>
+
+            <h3>5.2 Cómo Controlar las Cookies:</h3>
+            <p>Puede configurar su navegador para rechazar cookies o eliminarlas. Sin embargo, esto puede afectar la funcionalidad del sitio web.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>6. Sus Derechos como Titular de Datos</h2>
+            <p>De acuerdo con la Ley 1581 de 2012, usted tiene los siguientes derechos:</p>
+            <ul>
+                <li><strong>Acceso:</strong> Conocer qué datos personales tenemos sobre usted</li>
+                <li><strong>Rectificación:</strong> Solicitar corrección de datos incorrectos o incompletos</li>
+                <li><strong>Actualización:</strong> Mantener sus datos actualizados</li>
+                <li><strong>Supresión:</strong> Solicitar eliminación de sus datos (sujeto a obligaciones legales)</li>
+                <li><strong>Revocación:</strong> Retirar su consentimiento para tratamiento de datos</li>
+                <li><strong>Portabilidad:</strong> Recibir copia de sus datos en formato estructurado</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>Para ejercer estos derechos, contáctenos:</strong><br>
+                📧 Email: distribucionesfm0119@gmail.com<br>
+                📞 WhatsApp: +57 312 346 7272<br>
+                <em>Responderemos en un plazo máximo de 15 días hábiles.</em>
+            </div>
+        </div>
+
+        <div class="legal-section">
+            <h2>7. Seguridad de la Información</h2>
+            <p>Implementamos medidas de seguridad técnicas y organizativas para proteger sus datos personales:</p>
+            <ul>
+                <li>Cifrado SSL/TLS en todo el sitio web (HTTPS)</li>
+                <li>Almacenamiento seguro en servidores con certificaciones de seguridad</li>
+                <li>Acceso restringido a datos personales solo para personal autorizado</li>
+                <li>Pagos procesados por Wompi con certificación PCI-DSS Level 1</li>
+                <li>Auditorías periódicas de seguridad</li>
+            </ul>
+            <p>Sin embargo, ningún método de transmisión por Internet es 100% seguro. Hacemos nuestro mejor esfuerzo, pero no podemos garantizar seguridad absoluta.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>8. Retención de Datos</h2>
+            <p>Conservamos su información personal durante el tiempo necesario para:</p>
+            <ul>
+                <li>Cumplir con los propósitos para los cuales fue recopilada</li>
+                <li>Cumplir con obligaciones legales (tributarias: 5 años mínimo)</li>
+                <li>Resolver disputas y hacer cumplir nuestros acuerdos</li>
+            </ul>
+            <p>Una vez finalizado el período de retención, eliminaremos o anonimizaremos sus datos de forma segura.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>9. Menores de Edad</h2>
+            <p>Nuestros servicios están dirigidos a personas mayores de 18 años. No recopilamos intencionalmente información de menores de edad sin consentimiento parental. Si descubrimos que hemos recopilado datos de un menor, los eliminaremos inmediatamente.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>10. Transferencias Internacionales de Datos</h2>
+            <p>Algunos de nuestros proveedores de servicios (como Google y Meta) pueden almacenar datos en servidores ubicados fuera de Colombia. Estos proveedores cumplen con estándares internacionales de protección de datos y mecanismos de transferencia aprobados.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>11. Marketing y Comunicaciones</h2>
+            <p>Si usted acepta recibir comunicaciones comerciales, podemos enviarle:</p>
+            <ul>
+                <li>Ofertas y promociones especiales</li>
+                <li>Novedades de productos</li>
+                <li>Contenido educativo sobre herramientas</li>
+            </ul>
+            <p><strong>Puede cancelar la suscripción en cualquier momento</strong> haciendo clic en el enlace "Darse de baja" en nuestros emails o contactándonos directamente.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>12. Cambios en esta Política</h2>
+            <p>Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento. Los cambios serán publicados en esta página con una nueva fecha de "Última actualización". Le recomendamos revisar periódicamente esta política para mantenerse informado.</p>
+            <p>Si realizamos cambios significativos, le notificaremos por email o mediante un aviso destacado en nuestro sitio web.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>13. Autoridad de Control</h2>
+            <p>Si considera que sus derechos de protección de datos han sido vulnerados, puede presentar una queja ante:</p>
+            <div class="highlight-box">
+                <strong>Superintendencia de Industria y Comercio (SIC)</strong><br>
+                Delegatura para la Protección de Datos Personales<br>
+                🌐 Web: <a href="https://www.sic.gov.co" target="_blank">www.sic.gov.co</a><br>
+                📞 Línea gratuita: 01 8000 910 165 (desde Colombia)
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <h2>14. Información de Contacto</h2>
+            <p><strong>Para cualquier pregunta sobre esta Política de Privacidad o el tratamiento de sus datos personales, contáctenos:</strong></p>
+            <p>
+                <strong>FERREMOLINA - Distribuciones</strong><br>
+                📍 Dirección: Cra. 8bis #37-22, Pereira, Risaralda, Colombia<br>
+                📧 Email: distribucionesfm0119@gmail.com<br>
+                📞 WhatsApp: +57 312 346 7272<br>
+            </p>
+            <p><em>Horario de atención: Lunes a Sábado, 8:00 AM - 6:00 PM (hora colombiana)</em></p>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px; padding-top: 30px; border-top: 1px solid #ddd;">
+            <a href="index.html" class="back-link" style="font-size: 1.1rem;">← Volver a la tienda</a>
+        </div>
+    </div>
+</body>
+</html>

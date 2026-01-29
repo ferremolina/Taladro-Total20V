@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos y Condiciones | FERREMOLINA</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 50%, #4facfe 100%);
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .legal-page {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 25px 80px;
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 30px;
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.95);
+            color: #f5576c;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .back-link:hover {
+            background: #f5576c;
+            color: white;
+            transform: translateX(-5px);
+            box-shadow: 0 6px 20px rgba(245, 87, 108, 0.4);
+        }
+
+        .back-link::before {
+            content: '←';
+            font-size: 1.2em;
+        }
+        
+        .legal-header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 50px 30px;
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .legal-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #f093fb, #f5576c, #4facfe);
+        }
+
+        .legal-header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: -1px;
+        }
+
+        .update-date {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .legal-section {
+            background: rgba(255, 255, 255, 0.98);
+            margin-bottom: 30px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.6s ease-out backwards;
+        }
+
+        .legal-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+        }
+
+        .legal-section h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            padding-left: 20px;
+            border-left: 5px solid #f5576c;
+            font-weight: 700;
+        }
+
+        .legal-section h3 {
+            font-size: 1.4rem;
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .legal-section h3::before {
+            content: '▸';
+            color: #f5576c;
+            margin-right: 10px;
+        }
+
+        .legal-section p {
+            margin-bottom: 18px;
+            text-align: justify;
+            color: #4a5568;
+            line-height: 1.9;
+        }
+
+        .legal-section ul, .legal-section ol {
+            margin-left: 35px;
+            margin-bottom: 25px;
+        }
+
+        .legal-section li {
+            margin-bottom: 12px;
+            padding-left: 10px;
+            color: #4a5568;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0f0 100%);
+            border-left: 5px solid #f5576c;
+            padding: 25px 30px;
+            margin: 30px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(245, 87, 108, 0.1);
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+            border-left: 5px solid #ffa726;
+            padding: 25px 30px;
+            margin: 30px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(255, 167, 38, 0.15);
+        }
+
+        .product-specs {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            padding: 25px;
+            border-radius: 16px;
+            margin: 25px 0;
+            border: 2px solid rgba(33, 150, 243, 0.2);
+        }
+
+        .product-specs h3 {
+            color: #1565c0;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin-top: 50px;
+            box-shadow: 0 10px 40px rgba(255, 152, 0, 0.15);
+            border: 2px solid rgba(255, 152, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .legal-page { padding: 30px 20px 60px; }
+            .legal-header { padding: 35px 25px; }
+            .legal-header h1 { font-size: 2rem; }
+            .legal-section { padding: 30px 25px; }
+            .legal-section h2 { font-size: 1.5rem; }
+        }
+
+        ::-webkit-scrollbar { width: 12px; }
+        ::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.1); }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #f5576c, #f093fb);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="legal-page">
+        <a href="index.html" class="back-link">← Volver a la tienda</a>
+        
+        <header class="legal-header">
+            <h1>Términos y Condiciones de Venta</h1>
+            <p class="update-date">Última actualización: 29 de enero de 2026</p>
+        </header>
+
+        <div class="legal-section">
+            <h2>1. Información General</h2>
+            <p>Los presentes Términos y Condiciones regulan la compra y venta de productos entre FERREMOLINA (en adelante "el vendedor", "nosotros" o "la empresa") y usted (en adelante "el comprador" o "el cliente") a través de nuestro sitio web.</p>
+            
+            <div class="highlight-box">
+                <strong>Datos del Vendedor: Cristian Alejandro Bran</strong><br>
+                <strong>Razón Social:</strong> FERREMOLINA - Distribuciones<br>
+                <strong>Domicilio:</strong> Cra. 8bis #37-22, Pereira, Risaralda, Colombia<br>
+                <strong>Email:</strong> distribucionesfm0119@gmail.com<br>
+                <strong>WhatsApp:</strong> +57 312 346 7272<br>
+                <strong>Actividad:</strong> Comercialización de herramientas profesionales
+            </div>
+
+            <p>Al realizar una compra en nuestro sitio web, usted acepta estar sujeto a estos Términos y Condiciones. Si no está de acuerdo, por favor no realice ninguna compra.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>2. Producto Ofrecido</h2>
+            <p>El producto ofrecido a través de este sitio web es:</p>
+            
+            <div class="product-specs">
+                <h3>🔧 Taladro Inalámbrico TOTAL 20V - Kit Completo</h3>
+                <strong>Especificaciones Técnicas:</strong>
+                <ul>
+                    <li>Voltaje: 20V de litio</li>
+                    <li>Torque máximo: 66 Nm</li>
+                    <li>Motor: Brushless (sin escobillas)</li>
+                    <li>Mandril: 1/2 pulgada (13mm) automático</li>
+                    <li>Velocidades: 2 velocidades variables (0-450 / 0-1800 RPM)</li>
+                    <li>Función percutor: Sí (45,000 IPM)</li>
+                    <li>Luz LED integrada</li>
+                </ul>
+                
+                <strong>Kit Incluye:</strong>
+                <ul>
+                    <li>1 Taladro percutor inalámbrico TOTAL 20V</li>
+                    <li>2 Baterías de litio 20V 2.0Ah</li>
+                    <li>1 Cargador rápido</li>
+                    <li>47 Accesorios (brocas, puntas, adaptadores)</li>
+                    <li>1 Maletín BMC profesional</li>
+                    <li>Manual de usuario en español</li>
+                </ul>
+
+                <strong>Condición:</strong> Producto 100% nuevo, sellado de fábrica<br>
+                <strong>Marca:</strong> TOTAL (Original)<br>
+                <strong>Garantía:</strong> 1 año por defectos de fabricación
+            </div>
+        </div>
+
+        <div class="legal-section">
+            <h2>3. Precio y Forma de Pago</h2>
+            
+            <h3>3.1 Precio del Producto:</h3>
+            <p><strong>Precio de Venta: $390.000 COP</strong> (Trescientos Noventa Mil Pesos Colombianos)</p>
+            <ul>
+                <li>El precio incluye IVA</li>
+                <li>El precio NO incluye costo de envío (se calcula según destino)</li>
+                <li>Precio válido mientras exista disponibilidad de stock</li>
+                <li>Nos reservamos el derecho de modificar precios sin previo aviso</li>
+            </ul>
+
+            <h3>3.2 Métodos de Pago Aceptados:</h3>
+            <p>Procesamos pagos de forma segura a través de <strong>Wompi</strong>, plataforma certificada PCI-DSS. Aceptamos:</p>
+            <ul>
+                <li>✅ Tarjetas de crédito (Visa, Mastercard, American Express, Diners)</li>
+                <li>✅ Tarjetas débito</li>
+                <li>✅ PSE (Pagos Seguros en Línea)</li>
+                <li>✅ Nequi, Daviplata y billeteras digitales</li>
+                <li>✅ Corresponsales bancarios (Efecty, Baloto, etc.)</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>🔒 Seguridad en Pagos:</strong><br>
+                Todos los pagos son procesados por Wompi con cifrado SSL. FERREMOLINA NO tiene acceso a los datos de su tarjeta. Sus datos financieros están protegidos por los más altos estándares de seguridad.
+            </div>
+
+            <h3>3.3 Confirmación de Pago:</h3>
+            <p>Una vez completado el pago, recibirá:</p>
+            <ol>
+                <li>Confirmación inmediata en pantalla</li>
+                <li>Email de confirmación de compra</li>
+                <li>Notificación de WhatsApp con detalles del pedido</li>
+            </ol>
+        </div>
+
+        <div class="legal-section">
+            <h2>4. Proceso de Compra</h2>
+            
+            <h3>Paso a Paso:</h3>
+            <ol>
+                <li><strong>Selección:</strong> Haga clic en "Comprar Ahora" en nuestro sitio web</li>
+                <li><strong>Información:</strong> Complete sus datos personales y dirección de envío</li>
+                <li><strong>Pago:</strong> Será redirigido a la plataforma segura de Wompi para completar el pago</li>
+                <li><strong>Confirmación:</strong> Recibirá confirmación por email y WhatsApp</li>
+                <li><strong>Preparación:</strong> Preparamos su pedido en 24-48 horas hábiles</li>
+                <li><strong>Envío:</strong> Despachamos con empresa de mensajería confiable</li>
+                <li><strong>Entrega:</strong> Reciba su producto en la dirección indicada</li>
+            </ol>
+
+            <div class="warning-box">
+                <strong>⚠️ Importante:</strong> Al completar la compra, usted está realizando una oferta de compra. Nos reservamos el derecho de aceptar o rechazar su pedido en caso de disponibilidad limitada, errores de precio o información incompleta.
+            </div>
+        </div>
+
+        <div class="legal-section">
+            <h2>5. Disponibilidad y Stock</h2>
+            <ul>
+                <li>La disponibilidad de productos está sujeta a existencias</li>
+                <li>Mostramos disponibilidad en tiempo real en el sitio web</li>
+                <li>Si un producto se agota después de su compra, le notificaremos inmediatamente y procesaremos el reembolso completo</li>
+                <li>Nos reservamos el derecho de limitar cantidades por cliente</li>
+            </ul>
+        </div>
+
+        <div class="legal-section">
+            <h2>6. Envíos y Entregas</h2>
+            
+            <h3>6.1 Cobertura:</h3>
+            <p>Realizamos envíos a <strong>toda Colombia</strong> a través de empresas de mensajería certificadas.</p>
+
+            <h3>6.2 Tiempos de Entrega:</h3>
+            <ul>
+                <li><strong>Ciudades principales</strong> (Bogotá, Medellín, Cali, Barranquilla, etc.): 3-5 días hábiles</li>
+                <li><strong>Ciudades intermedias:</strong> 5-7 días hábiles</li>
+                <li><strong>Zonas rurales:</strong> 7-10 días hábiles</li>
+            </ul>
+            <p><em>Los tiempos son estimados desde el despacho y pueden variar por condiciones climáticas, festivos o situaciones de fuerza mayor.</em></p>
+
+            <h3>6.3 Costos de Envío:</h3>
+            <ul>
+                <li>El costo de envío se calcula según destino y peso</li>
+                <li>Se informa el costo exacto despues de finalizar la compra</li>
+                <li>Promociones especiales pueden incluir envío gratis</li>
+            </ul>
+
+            <h3>6.4 Seguimiento:</h3>
+            <p>Una vez despachado su pedido, recibirá:</p>
+            <ul>
+                <li>Número de guía de rastreo</li>
+                <li>Enlace para seguimiento en línea</li>
+                <li>Notificaciones por WhatsApp del estado del envío</li>
+            </ul>
+
+            <h3>6.5 Recepción del Producto:</h3>
+            <div class="highlight-box">
+                <strong>🚨 MUY IMPORTANTE - Inspeccione al Recibir:</strong><br>
+                Al recibir su producto, por favor:
+                <ul>
+                    <li>Verifique que el paquete esté en buenas condiciones (sin golpes, rupturas o humedades)</li>
+                    <li>Abra el paquete en presencia del mensajero</li>
+                    <li>Confirme que el contenido esté completo y sin daños</li>
+                    <li>Si encuentra algún problema, rechace el envío y tome fotos</li>
+                    <li>Firme la guía solo si todo está en orden</li>
+                </ul>
+                <strong>Una vez firmada la guía, no podremos procesar reclamos por daños externos.</strong>
+            </div>
+        </div>
+
+        <div class="legal-section">
+            <h2>7. Garantía del Producto</h2>
+            
+            <h3>7.1 Cobertura de Garantía:</h3>
+            <ul>
+                <li><strong>Duración:</strong> 1 año desde la fecha de compra</li>
+                <li><strong>Cubre:</strong> Defectos de fabricación y fallas en materiales</li>
+                <li><strong>Garantía oficial:</strong> Respaldada por TOTAL Colombia</li>
+            </ul>
+
+            <h3>7.2 La Garantía NO Cubre:</h3>
+            <ul>
+                <li>Desgaste normal por uso</li>
+                <li>Daños por mal uso, negligencia o accidentes</li>
+                <li>Uso comercial intensivo (garantía válida para uso doméstico y semi-profesional)</li>
+                <li>Modificaciones no autorizadas</li>
+                <li>Daños por líquidos o inmersión en agua</li>
+                <li>Accesorios consumibles (brocas, puntas)</li>
+            </ul>
+
+            <h3>7.3 Hacer Efectiva la Garantía:</h3>
+            <ol>
+                <li>Contacte a servicio al cliente por WhatsApp o email</li>
+                <li>Proporcione número de pedido y descripción del problema</li>
+                <li>Envíe foto/video del defecto</li>
+                <li>Le indicaremos el centro de servicio autorizado más cercano</li>
+                <li>Presente la herramienta con la factura de compra</li>
+            </ol>
+        </div>
+
+        <div class="legal-section">
+            <h2>8. Derecho de Retracto y Devoluciones</h2>
+            
+            <h3>8.1 Derecho de Retracto (Ley 1480 de 2011):</h3>
+            <p>Tiene derecho a retractarse de su compra dentro de los <strong>5 días hábiles</strong> siguientes a la recepción del producto, sin necesidad de justificación.</p>
+
+            <h3>8.2 Condiciones para Retracto:</h3>
+            <ul>
+                <li>El producto debe estar sin usar, con etiquetas y empaques originales</li>
+                <li>Incluir todos los accesorios y manuales</li>
+                <li>No debe presentar señales de uso o daño</li>
+                <li>Los gastos de envío de devolución corren por cuenta del cliente</li>
+            </ul>
+
+            <h3>8.3 Proceso de Retracto:</h3>
+            <ol>
+                <li>Envíe email a distribucionesfm0119@gmail.com indicando "Retracto de Compra"</li>
+                <li>Incluya número de pedido y motivo (opcional)</li>
+                <li>Le enviaremos instrucciones de devolución</li>
+                <li>Una vez recibido y verificado el producto, procesaremos el reembolso</li>
+                <li>Reembolso en 5-10 días hábiles al método de pago original</li>
+            </ol>
+
+            <h3>8.4 Devoluciones por Defecto o Error:</h3>
+            <p>Si el producto llega defectuoso o no corresponde a su pedido:</p>
+            <ul>
+                <li>Contacte inmediatamente (máximo 48 horas después de recibir)</li>
+                <li>Envíe fotos del problema</li>
+                <li>Procesaremos reemplazo sin costo de envío adicional</li>
+                <li>O reembolso completo si lo prefiere</li>
+            </ul>
+        </div>
+
+        <div class="legal-section">
+            <h2>9. Limitaciones de Responsabilidad</h2>
+            <p>FERREMOLINA no será responsable por:</p>
+            <ul>
+                <li>Daños causados por uso indebido de la herramienta</li>
+                <li>Retrasos en la entrega por causas de fuerza mayor</li>
+                <li>Información incorrecta proporcionada por el cliente (dirección errónea)</li>
+                <li>Daños o pérdidas causadas por la empresa de mensajería (gestionaremos reclamaciones)</li>
+                <li>Incompatibilidad del producto con expectativas subjetivas del cliente</li>
+            </ul>
+        </div>
+
+        <div class="legal-section">
+            <h2>10. Uso del Sitio Web</h2>
+            
+            <h3>10.1 Prohibiciones:</h3>
+            <p>Al usar nuestro sitio web, usted se compromete a NO:</p>
+            <ul>
+                <li>Realizar actividades ilegales o fraudulentas</li>
+                <li>Intentar acceder a áreas restringidas del sistema</li>
+                <li>Transmitir virus o código malicioso</li>
+                <li>Copiar, reproducir o distribuir nuestro contenido sin autorización</li>
+                <li>Realizar compras con información falsa</li>
+            </ul>
+
+            <h3>10.2 Propiedad Intelectual:</h3>
+            <p>Todo el contenido del sitio web (textos, imágenes, logos, diseños) es propiedad de FERREMOLINA o sus licenciantes y está protegido por leyes de propiedad intelectual.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>11. Comunicaciones</h2>
+            <p>Al realizar una compra, usted acepta recibir:</p>
+            <ul>
+                <li><strong>Comunicaciones transaccionales:</strong> Confirmaciones de pedido, actualizaciones de envío (obligatorias)</li>
+                <li><strong>Comunicaciones promocionales:</strong> Ofertas, novedades (opcionales, puede darse de baja)</li>
+            </ul>
+            <p>Puede optar por no recibir emails promocionales en cualquier momento haciendo clic en "Darse de baja" o contactándonos.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>12. Resolución de Conflictos</h2>
+            
+            <h3>12.1 Atención al Cliente:</h3>
+            <p>Para cualquier problema o inquietud, contáctenos primero:</p>
+            <ul>
+                <li>📧 Email: distribucionesfm0119@gmail.com</li>
+                <li>📞 WhatsApp: +57 312 346 7272</li>
+                <li>Horario: Lunes a Sábado, 8:00 AM - 6:00 PM</li>
+            </ul>
+            <p>Nos comprometemos a resolver cualquier inconveniente de manera rápida y amigable.</p>
+
+            <h3>12.2 Organismos de Control:</h3>
+            <p>Si no logra resolver su problema con nosotros, puede acudir a:</p>
+            <ul>
+                <li><strong>Superintendencia de Industria y Comercio (SIC)</strong> - Protección al consumidor</li>
+                <li>Web: www.sic.gov.co</li>
+                <li>Línea gratuita: 01 8000 910 165</li>
+            </ul>
+
+            <h3>12.3 Ley Aplicable:</h3>
+            <p>Estos Términos y Condiciones se rigen por las leyes de la República de Colombia, especialmente:</p>
+            <ul>
+                <li>Ley 1480 de 2011 (Estatuto del Consumidor)</li>
+                <li>Ley 1581 de 2012 (Protección de Datos Personales)</li>
+                <li>Código de Comercio Colombiano</li>
+            </ul>
+        </div>
+
+        <div class="legal-section">
+            <h2>13. Modificaciones</h2>
+            <p>FERREMOLINA se reserva el derecho de modificar estos Términos y Condiciones en cualquier momento. Las modificaciones entrarán en vigor inmediatamente después de su publicación en el sitio web.</p>
+            <p>Es responsabilidad del cliente revisar periódicamente estos términos. El uso continuado del sitio web después de cambios constituye aceptación de los nuevos términos.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>14. Aceptación de Términos</h2>
+            <div class="highlight-box">
+                <strong>Al hacer clic en "Comprar Ahora" o "Proceder al Pago", usted declara que:</strong>
+                <ul>
+                    <li>✅ Ha leído y comprendido estos Términos y Condiciones</li>
+                    <li>✅ Acepta cumplir con todas las condiciones establecidas</li>
+                    <li>✅ Es mayor de 18 años o cuenta con autorización parental</li>
+                    <li>✅ La información proporcionada es verdadera y exacta</li>
+                    <li>✅ Acepta nuestra Política de Privacidad</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <h2>15. Información de Contacto</h2>
+            <p><strong>Para consultas sobre estos Términos y Condiciones:</strong></p>
+            <p>
+                <strong>FERREMOLINA - Distribuciones</strong><br>
+                📍 Dirección: Cra. 8bis #37-22, Pereira, Risaralda, Colombia<br>
+                📧 Email: distribucionesfm0119@gmail.com<br>
+                📞 WhatsApp: +57 312 346 7272<br>
+                🌐 Web: www.ferremolina.com<br>
+                🕐 Horario: Lunes a Sábado, 8:00 AM - 6:00 PM
+            </p>
+            <p><strong>Redes Sociales:</strong></p>
+            <p>
+                📘 Facebook: @Ferremolina<br>
+                📸 Instagram: @distribuciones_ferremolina<br>
+                🎵 TikTok: @ferremolina
+            </p>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px; padding-top: 30px; border-top: 1px solid #ddd;">
+            <p style="color: #666; margin-bottom: 20px;"><em>Gracias por confiar en FERREMOLINA - Tu aliado en herramientas profesionales</em></p>
+            <a href="index.html" class="back-link" style="font-size: 1.1rem;">← Volver a la tienda</a>
+        </div>
+    </div>
+</body>
+</html>

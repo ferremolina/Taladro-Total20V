@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Envíos y Devoluciones | FERREMOLINA</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 50%, #43e97b 100%);
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .legal-page {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 25px 80px;
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 30px;
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.95);
+            color: #4facfe;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .back-link:hover {
+            background: #4facfe;
+            color: white;
+            transform: translateX(-5px);
+            box-shadow: 0 6px 20px rgba(79, 172, 254, 0.4);
+        }
+
+        .back-link::before {
+            content: '←';
+            font-size: 1.2em;
+        }
+        
+        .legal-header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 50px 30px;
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .legal-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #4facfe, #00f2fe, #43e97b);
+        }
+
+        .legal-header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: -1px;
+        }
+
+        .update-date {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .legal-section {
+            background: rgba(255, 255, 255, 0.98);
+            margin-bottom: 30px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.6s ease-out backwards;
+        }
+
+        .legal-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+        }
+
+        .legal-section h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            padding-left: 20px;
+            border-left: 5px solid #4facfe;
+            font-weight: 700;
+        }
+
+        .legal-section h3 {
+            font-size: 1.4rem;
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .legal-section h3::before {
+            content: '▸';
+            color: #4facfe;
+            margin-right: 10px;
+        }
+
+        .legal-section h4 {
+            font-size: 1.2rem;
+            color: #34495e;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .legal-section p {
+            margin-bottom: 18px;
+            text-align: justify;
+            color: #4a5568;
+            line-height: 1.9;
+        }
+
+        .legal-section ul, .legal-section ol {
+            margin-left: 35px;
+            margin-bottom: 25px;
+        }
+
+        .legal-section li {
+            margin-bottom: 12px;
+            padding-left: 10px;
+            color: #4a5568;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #e3f2fd 0%, #b3e5fc 100%);
+            border-left: 5px solid #4facfe;
+            padding: 25px 30px;
+            margin: 30px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(79, 172, 254, 0.15);
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            border-left: 5px solid #ff9800;
+            padding: 25px 30px;
+            margin: 30px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(255, 152, 0, 0.15);
+        }
+
+        .success-box {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            border-left: 5px solid #4caf50;
+            padding: 25px 30px;
+            margin: 30px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.15);
+        }
+
+        .shipping-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .shipping-table th {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 18px 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .shipping-table td {
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .shipping-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .shipping-table tr:hover {
+            background: #f5f5f5;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 50px;
+            margin: 35px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            bottom: 10px;
+            width: 3px;
+            background: linear-gradient(180deg, #4facfe, #43e97b);
+            border-radius: 3px;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 35px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -38px;
+            top: 5px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #4facfe;
+            border: 4px solid white;
+            box-shadow: 0 0 0 2px #4facfe, 0 2px 8px rgba(0,0,0,0.15);
+            z-index: 1;
+        }
+
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+
+        .timeline-item strong {
+            display: block;
+            color: #2c3e50;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .timeline-item p {
+            color: #5a6c7d;
+            margin: 0;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin-top: 50px;
+            box-shadow: 0 10px 40px rgba(255, 152, 0, 0.15);
+            border: 2px solid rgba(255, 152, 0, 0.2);
+        }
+
+        .contact-info h3 {
+            color: #e65100;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .legal-page { padding: 30px 20px 60px; }
+            .legal-header { padding: 35px 25px; }
+            .legal-header h1 { font-size: 2rem; }
+            .legal-section { padding: 30px 25px; }
+            .legal-section h2 { font-size: 1.5rem; }
+            .shipping-table { font-size: 0.9rem; }
+            .shipping-table th, .shipping-table td { padding: 12px 10px; }
+            .timeline { padding-left: 40px; }
+            .timeline::before { left: 15px; }
+            .timeline-item::before { left: -32px; }
+        }
+
+        ::-webkit-scrollbar { width: 12px; }
+        ::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.1); }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #4facfe, #43e97b);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="legal-page">
+        <a href="index.html" class="back-link">← Volver a la tienda</a>
+        
+        <header class="legal-header">
+            <h1>Política de Envíos y Devoluciones</h1>
+            <p class="update-date">Última actualización: 29 de enero de 2026</p>
+        </header>
+
+        <div class="legal-section">
+            <h2>📦 1. Política de Envíos</h2>
+            
+            <h3>1.1 Cobertura Nacional</h3>
+            <p>En FERREMOLINA realizamos envíos a <strong>todo el territorio colombiano</strong> a través de empresas de mensajería certificadas y con seguro incluido.</p>
+            
+            <div class="success-box">
+                <strong>✅ Envío 100% Seguro</strong><br>
+                Todos nuestros envíos incluyen:
+                <ul>
+                    <li>Seguro contra pérdida o daño en tránsito</li>
+                    <li>Número de rastreo para seguimiento en tiempo real</li>
+                    <li>Empaque reforzado para proteger tu herramienta</li>
+                    <li>Notificaciones por WhatsApp del estado del envío</li>
+                </ul>
+            </div>
+
+            <h3>1.2 Tiempos de Entrega Estimados</h3>
+            <p>Los tiempos de entrega varían según el destino:</p>
+            
+            <table class="shipping-table">
+                <thead>
+                    <tr>
+                        <th>Tipo de Destino</th>
+                        <th>Tiempo Estimado</th>
+                        <th>Ejemplos de Ciudades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Ciudades Principales</strong></td>
+                        <td>3-5 días hábiles</td>
+                        <td>Bogotá, Medellín, Cali, Barranquilla, Cartagena, Bucaramanga, Pereira</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ciudades Intermedias</strong></td>
+                        <td>5-7 días hábiles</td>
+                        <td>Manizales, Armenia, Ibagué, Pasto, Popayán, Montería, Villavicencio</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Municipios y Zonas Rurales</strong></td>
+                        <td>7-10 días hábiles</td>
+                        <td>Municipios pequeños y zonas rurales</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="warning-box">
+                <strong>⚠️ Importante:</strong> Los tiempos son estimados desde el despacho. Pueden variar por:
+                <ul>
+                    <li>Condiciones climáticas adversas</li>
+                    <li>Días festivos o puentes</li>
+                    <li>Situaciones de orden público</li>
+                    <li>Demoras en mensajería por alta demanda</li>
+                </ul>
+                <strong>No incluyen el tiempo de preparación del pedido (24-48 horas hábiles).</strong>
+            </div>
+
+            <h3>1.3 Costo de Envío</h3>
+            <p>El costo de envío se calcula automáticamente según:</p>
+            <ul>
+                <li><strong>Destino:</strong> Ciudad y departamento de entrega</li>
+                <li><strong>Peso:</strong> Aproximadamente 5 kg (kit completo con maletín)</li>
+                <li><strong>Tipo de servicio:</strong> Terrestre con seguro incluido</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>💰 Rangos de Costo Aproximado:</strong><br>
+                <ul>
+                    <li><strong>Ciudades cercanas (Risaralda, Eje Cafetero):</strong> $15.000 - $20.000 COP</li>
+                    <li><strong>Ciudades principales:</strong> $20.000 - $30.000 COP</li>
+                    <li><strong>Ciudades intermedias/lejanas:</strong> $30.000 - $45.000 COP</li>
+                    <li><strong>Zonas rurales:</strong> $40.000 - $60.000 COP</li>
+                </ul>
+                <p><em>El costo exacto se muestra antes de confirmar tu compra.</em></p>
+            </div>
+
+            <h3>1.4 Proceso de Envío - Línea de Tiempo</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <strong>Día 0: Compra Confirmada</strong>
+                    <p>Recibes email y WhatsApp de confirmación. Comenzamos a preparar tu pedido.</p>
+                </div>
+                <div class="timeline-item">
+                    <strong>Día 1-2: Preparación</strong>
+                    <p>Verificamos el producto, lo empacamos con protección reforzada y generamos la guía de envío.</p>
+                </div>
+                <div class="timeline-item">
+                    <strong>Día 2-3: Despacho</strong>
+                    <p>Entregamos a la transportadora y te enviamos el número de rastreo por WhatsApp y email.</p>
+                </div>
+                <div class="timeline-item">
+                    <strong>Día 3-10: En Tránsito</strong>
+                    <p>Tu pedido viaja hacia tu ciudad. Puedes rastrearlo en tiempo real con el enlace que te enviamos.</p>
+                </div>
+                <div class="timeline-item">
+                    <strong>Día Final: Entrega</strong>
+                    <p>La transportadora te contacta para coordinar la entrega en tu dirección.</p>
+                </div>
+            </div>
+
+            <h3>1.5 Seguimiento de Envío</h3>
+            <p>Una vez despachado tu pedido, recibirás:</p>
+            <ul>
+                <li>📧 <strong>Email</strong> con número de guía y enlace de rastreo</li>
+                <li>📱 <strong>WhatsApp</strong> con enlace directo para ver el estado</li>
+                <li>🔔 <strong>Notificaciones automáticas</strong> de cambios de estado</li>
+            </ul>
+
+            <h3>1.6 Recepción del Paquete</h3>
+            <div class="warning-box">
+                <strong>🚨 IMPORTANTE - INSPECCIONA AL RECIBIR:</strong><br>
+                <br>
+                <strong>Antes de firmar la guía de entrega, SIEMPRE:</strong>
+                <ol>
+                    <li><strong>Inspecciona el paquete externo:</strong>
+                        <ul>
+                            <li>Verifica que no tenga golpes, rupturas o deformaciones</li>
+                            <li>Revisa que no esté mojado o manchado</li>
+                            <li>Confirma que el peso sea el adecuado (no debe sentirse vacío)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Abre en presencia del mensajero:</strong>
+                        <ul>
+                            <li>Solicita al mensajero esperar mientras abres</li>
+                            <li>Verifica que el contenido esté completo (taladro, 2 baterías, cargador, accesorios, maletín)</li>
+                            <li>Revisa que no haya daños internos</li>
+                        </ul>
+                    </li>
+                    <li><strong>Si hay algún problema:</strong>
+                        <ul>
+                            <li><strong>NO FIRMES LA GUÍA</strong></li>
+                            <li>Toma fotos del daño</li>
+                            <li>Anota en la guía: "Recibido con daños" y describe el problema</li>
+                            <li>Rechaza el paquete y contacta inmediatamente a nuestro WhatsApp</li>
+                        </ul>
+                    </li>
+                    <li><strong>Si todo está bien:</strong>
+                        <ul>
+                            <li>Firma la guía de conformidad</li>
+                            <li>¡Disfruta tu nueva herramienta! 🎉</li>
+                        </ul>
+                    </li>
+                </ol>
+                <br>
+                <strong>⚠️ Una vez firmada la guía sin observaciones, NO podremos procesar reclamos por daños externos o faltantes.</strong>
+            </div>
+        </div>
+
+        <div class="legal-section">
+            <h2>🔄 2. Política de Devoluciones</h2>
+            
+            <h3>2.1 Derecho de Retracto (Ley 1480 de 2011)</h3>
+            <p>Como consumidor colombiano, tienes derecho a retractarte de tu compra sin necesidad de justificación dentro de los <strong>5 días hábiles</strong> siguientes a la recepción del producto.</p>
+
+            <div class="success-box">
+                <strong>✅ Tu Derecho de Cambiar de Opinión:</strong><br>
+                Si por cualquier motivo decides que el producto no es para ti, puedes devolverlo dentro de 5 días hábiles, siempre y cuando:
+                <ul>
+                    <li>El producto esté <strong>sin usar</strong> (no puede tener señales de uso)</li>
+                    <li>Conserve empaques, etiquetas y sellos originales</li>
+                    <li>Incluya todos los accesorios y manuales</li>
+                    <li>El maletín esté en perfectas condiciones</li>
+                </ul>
+            </div>
+
+            <h3>2.2 Motivos Válidos para Devolución</h3>
+            <p>Aceptamos devoluciones en los siguientes casos:</p>
+
+            <h4>A) Derecho de Retracto (5 días):</h4>
+            <ul>
+                <li>Cambio de opinión</li>
+                <li>No cumple expectativas (sin ser un defecto)</li>
+                <li>Ya no necesitas el producto</li>
+            </ul>
+            <p><em>Nota: Los gastos de envío de devolución corren por cuenta del cliente.</em></p>
+
+            <h4>B) Producto Defectuoso o con Fallas:</h4>
+            <ul>
+                <li>No enciende o no funciona correctamente</li>
+                <li>Defecto de fabricación</li>
+                <li>Faltante de accesorios</li>
+                <li>Producto dañado durante el envío (reportado al recibir)</li>
+            </ul>
+            <p><em>En este caso, cubrimos todos los gastos de reenvío o reemplazo.</em></p>
+
+            <h4>C) Error en el Pedido:</h4>
+            <ul>
+                <li>Te enviamos un producto diferente</li>
+                <li>El producto no corresponde a la descripción</li>
+            </ul>
+            <p><em>Reemplazamos sin costo adicional o reembolsamos completamente.</em></p>
+
+            <h3>2.3 Casos en que NO se Acepta Devolución</h3>
+            <div class="warning-box">
+                <strong>❌ NO podemos aceptar devoluciones si:</strong>
+                <ul>
+                    <li>El producto muestra señales de uso, desgaste o maltrato</li>
+                    <li>Faltan accesorios, manuales o el empaque original</li>
+                    <li>El producto ha sido modificado o reparado por terceros</li>
+                    <li>Han pasado más de 5 días hábiles (salvo defectos cubiertos por garantía)</li>
+                    <li>Se firmó la guía sin observaciones y no se reportaron daños</li>
+                    <li>El daño es causado por mal uso o negligencia del cliente</li>
+                </ul>
+            </div>
+
+            <h3>2.4 Proceso de Devolución - Paso a Paso</h3>
+            
+            <h4>Paso 1: Contacta a Servicio al Cliente</h4>
+            <p>Dentro de los 5 días hábiles, contacta por:</p>
+            <ul>
+                <li>📧 Email: distribucionesfm0119@gmail.com</li>
+                <li>📱 WhatsApp: +57 312 346 7272</li>
+            </ul>
+            <p><strong>Indica:</strong></p>
+            <ul>
+                <li>Número de pedido</li>
+                <li>Motivo de la devolución</li>
+                <li>Fotos del producto (si hay defecto)</li>
+            </ul>
+
+            <h4>Paso 2: Evaluación de Solicitud</h4>
+            <p>Nuestro equipo revisará tu caso y te responderá en <strong>máximo 24 horas</strong> con:</p>
+            <ul>
+                <li>Confirmación de aceptación de devolución</li>
+                <li>Instrucciones de empaque y envío</li>
+                <li>Dirección de devolución</li>
+                <li>Código de autorización (RMA)</li>
+            </ul>
+
+            <h4>Paso 3: Empaque y Envío</h4>
+            <ul>
+                <li>Empaca el producto en su caja original con todos los accesorios</li>
+                <li>Incluye una nota con:
+                    <ul>
+                        <li>Tu nombre completo</li>
+                        <li>Número de pedido</li>
+                        <li>Código RMA</li>
+                        <li>Motivo de devolución</li>
+                    </ul>
+                </li>
+                <li>Envía a la dirección que te indicamos</li>
+                <li>Guarda el recibo/guía de envío</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>💡 Tip:</strong> Envía con guía de rastreo y seguro. Hasta que recibamos el producto, es tu responsabilidad.
+            </div>
+
+            <h4>Paso 4: Inspección</h4>
+            <p>Una vez recibamos la devolución (3-7 días hábiles):</p>
+            <ul>
+                <li>Inspeccionaremos el producto (estado, completitud)</li>
+                <li>Te notificaremos por WhatsApp/email el resultado</li>
+                <li>Si todo está en orden, procederemos con el reembolso o reemplazo</li>
+            </ul>
+
+            <h4>Paso 5: Reembolso o Reemplazo</h4>
+            <p><strong>Opción A: Reembolso</strong></p>
+            <ul>
+                <li>Devolución del valor del producto al método de pago original</li>
+                <li>Tiempo de procesamiento: 5-10 días hábiles</li>
+                <li>Si pagaste por PSE/transferencia, necesitaremos tus datos bancarios</li>
+                <li><em>Nota: Si la devolución es por retracto, el costo de envío inicial no se reembolsa</em></li>
+            </ul>
+
+            <p><strong>Opción B: Reemplazo</strong></p>
+            <ul>
+                <li>Te enviamos un producto nuevo sin costo adicional</li>
+                <li>Procesamos el envío inmediatamente</li>
+                <li>Si el defecto es por nuestra parte, el envío es gratis</li>
+            </ul>
+
+            <h3>2.5 Devoluciones por Productos Defectuosos</h3>
+            <p>Si tu producto presenta fallas o defectos:</p>
+            
+            <div class="success-box">
+                <strong>🔧 Garantía de 1 Año por Defectos de Fabricación:</strong>
+                <ul>
+                    <li><strong>Dentro de los primeros 30 días:</strong> Reemplazo inmediato o reembolso completo (tú eliges)</li>
+                    <li><strong>De 31 días a 1 año:</strong> Reparación en centro de servicio autorizado TOTAL o reemplazo (según diagnóstico)</li>
+                </ul>
+                <p><em>Proceso sin costo para ti - Incluye envíos de ida y vuelta</em></p>
+            </div>
+
+            <h3>2.6 Cambios (No hay opción directa de cambio)</h3>
+            <p>No manejamos cambios directos. Si deseas un producto diferente:</p>
+            <ol>
+                <li>Solicita devolución (derecho de retracto)</li>
+                <li>Una vez procesado el reembolso</li>
+                <li>Realiza una nueva compra</li>
+            </ol>
+            <p><em>Esto asegura que tengas el producto actualizado y no uno usado devuelto por otro cliente.</em></p>
+        </div>
+
+        <div class="legal-section">
+            <h2>🛡️ 3. Garantía del Producto</h2>
+            
+            <h3>3.1 Cobertura de Garantía</h3>
+            <div class="highlight-box">
+                <strong>Garantía Oficial TOTAL - 1 Año</strong>
+                <ul>
+                    <li>Válida desde la fecha de compra</li>
+                    <li>Cubre defectos de fabricación y fallas en materiales</li>
+                    <li>Respaldada por TOTAL Colombia (fabricante)</li>
+                    <li>Aplica para herramienta principal (no accesorios consumibles)</li>
+                </ul>
+            </div>
+
+            <h3>3.2 Qué Cubre la Garantía:</h3>
+            <ul>
+                <li>✅ Motor que no funcione correctamente</li>
+                <li>✅ Problemas eléctricos de fábrica</li>
+                <li>✅ Defectos en el mandril o mecanismo de percusión</li>
+                <li>✅ Fallas en el sistema de velocidades</li>
+                <li>✅ Baterías que no carguen (defecto de fabricación)</li>
+                <li>✅ Cargador que no funcione</li>
+                <li>✅ Malfunción del LED</li>
+            </ul>
+
+            <h3>3.3 Qué NO Cubre la Garantía:</h3>
+            <ul>
+                <li>❌ Desgaste normal por uso (carbones, engranajes)</li>
+                <li>❌ Accesorios consumibles (brocas, puntas que se desgastan)</li>
+                <li>❌ Daños por mal uso, sobrecarga o negligencia</li>
+                <li>❌ Uso comercial intensivo continuo</li>
+                <li>❌ Golpes, caídas o daños físicos externos</li>
+                <li>❌ Ingreso de líquidos o humedad</li>
+                <li>❌ Modificaciones o reparaciones no autorizadas</li>
+                <li>❌ Uso con accesorios no compatibles</li>
+            </ul>
+
+            <h3>3.4 Hacer Efectiva la Garantía</h3>
+            <ol>
+                <li><strong>Contacta a Servicio al Cliente:</strong>
+                    <ul>
+                        <li>📱 WhatsApp: +57 312 346 7272</li>
+                        <li>📧 Email: distribucionesfm0119@gmail.com</li>
+                    </ul>
+                </li>
+                <li><strong>Proporciona:</strong>
+                    <ul>
+                        <li>Número de pedido o factura</li>
+                        <li>Descripción detallada del problema</li>
+                        <li>Fotos o videos del defecto</li>
+                    </ul>
+                </li>
+                <li><strong>Diagnóstico:</strong>
+                    <ul>
+                        <li>Te indicaremos si procede garantía</li>
+                        <li>Dirección del centro de servicio autorizado más cercano</li>
+                        <li>O coordinamos recogida (según el caso)</li>
+                    </ul>
+                </li>
+                <li><strong>Reparación o Reemplazo:</strong>
+                    <ul>
+                        <li>Si es defecto de fábrica: Sin costo</li>
+                        <li>Tiempo estimado: 10-20 días hábiles</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <div class="legal-section">
+            <h2>❓ 4. Preguntas Frecuentes</h2>
+            
+            <h3>¿Puedo cancelar mi pedido?</h3>
+            <p>Sí, puedes cancelar tu pedido sin costo <strong>antes de que sea despachado</strong> (generalmente 48 horas después de la compra). Contacta inmediatamente por WhatsApp. Si ya fue despachado, aplica política de retracto.</p>
+
+            <h3>¿Qué pasa si no estoy cuando llegue el paquete?</h3>
+            <p>La transportadora intentará entrega 2-3 veces. Si no te ubican, el paquete quedará en bodega por 5 días hábiles. Después, se devuelve a origen y deberás cubrir el costo de reenvío.</p>
+
+            <h3>¿Me devuelven el dinero del envío si devuelvo por retracto?</h3>
+            <p>No. Si la devolución es por cambio de opinión (derecho de retracto), solo se reembolsa el valor del producto. El costo de envío inicial y el de devolución son por tu cuenta.</p>
+
+            <h3>¿Cómo sé si mi producto tiene garantía real?</h3>
+            <p>Todos nuestros productos son originales TOTAL con garantía oficial. El producto incluye certificado de garantía con número de serie. Además, tu factura sirve como comprobante.</p>
+
+            <h3>¿Puedo recoger el producto personalmente?</h3>
+            <p>Actualmente solo manejamos ventas con envío. Esto nos permite ofrecerte mejor precio al no tener costos de local físico.</p>
+
+            <h3>¿Ofrecen contraentrega?</h3>
+            <p>No. Solo aceptamos pagos en línea a través de Wompi para garantizar seguridad tanto para ti como para nosotros.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>📞 5. Servicio al Cliente</h2>
+            <p>Nuestro compromiso es resolver cualquier problema de manera rápida y satisfactoria.</p>
+            
+            <div class="contact-info">
+                <h3>Contáctanos:</h3>
+                <p>
+                    <strong>FERREMOLINA - Distribuciones</strong><br><br>
+                    📱 <strong>WhatsApp:</strong> +57 312 346 7272<br>
+                    <em>Respuesta promedio: 1-3 horas</em><br><br>
+                    
+                    📧 <strong>Email:</strong> distribucionesfm0119@gmail.com<br>
+                    <em>Respuesta en 24 horas hábiles</em><br><br>
+                    
+                    📍 <strong>Dirección:</strong> Cra. 8bis #37-22, Pereira, Risaralda, Colombia<br><br>
+                    
+                    🕐 <strong>Horario de Atención:</strong><br>
+                    Lunes a Sábado: 8:00 AM - 6:00 PM<br>
+                    Domingos y festivos: Solo urgencias por WhatsApp
+                </p>
+
+                <p style="margin-top: 20px;">
+                    <strong>Redes Sociales:</strong><br>
+                    📘 Facebook: @Ferremolina<br>
+                    📸 Instagram: @distribuciones_ferremolina<br>
+                    🎵 TikTok: @ferremolina
+                </p>
+            </div>
+        </div>
+
+        <div class="legal-section">
+            <h2>⚖️ 6. Jurisdicción y Ley Aplicable</h2>
+            <p>Esta política se rige por:</p>
+            <ul>
+                <li>Ley 1480 de 2011 (Estatuto del Consumidor - Colombia)</li>
+                <li>Decreto 1499 de 2014 (Reglamentación comercio electrónico)</li>
+                <li>Código de Comercio Colombiano</li>
+            </ul>
+            
+            <p>Para disputas, puedes acudir a:</p>
+            <ul>
+                <li><strong>Superintendencia de Industria y Comercio (SIC)</strong></li>
+                <li>Web: www.sic.gov.co</li>
+                <li>Línea gratuita: 01 8000 910 165</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px; padding-top: 30px; border-top: 1px solid #ddd;">
+            <p style="color: #666; margin-bottom: 20px;">
+                <strong>🛠️ Tu satisfacción es nuestra prioridad</strong><br>
+                <em>Gracias por confiar en FERREMOLINA para tus herramientas profesionales</em>
+            </p>
+            <a href="index.html" class="back-link" style="font-size: 1.1rem;">← Volver a la tienda</a>
+        </div>
+    </div>
+</body>
+</html>
