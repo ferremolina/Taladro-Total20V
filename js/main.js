@@ -79,10 +79,33 @@ function trackEvent(eventName, eventParams = {}) {
         console.log('GA Event:', eventName, eventParams);
     }
     
-    // Facebook Pixel
+    // Facebook Pixel - Mapeo de eventos estándar
     if (typeof fbq !== 'undefined') {
-        fbq('track', eventName, eventParams);
-        console.log('FB Event:', eventName, eventParams);
+        // Convertir eventos personalizados a eventos estándar de Facebook
+        const fbEventMap = {
+            'add_to_cart': 'AddToCart',
+            'view_item': 'ViewContent',
+            'contact': 'Contact',
+            'scroll': 'trackCustom' // Evento personalizado para scroll
+        };
+        
+        const fbEvent = fbEventMap[eventName] || eventName;
+        
+        // Preparar datos del evento para Facebook
+        const fbParams = {
+            content_name: eventParams.event_label || 'Taladro TOTAL 20V',
+            content_category: 'Power Tools',
+            value: eventParams.value || 390000,
+            currency: eventParams.currency || 'COP'
+        };
+        
+        if (fbEvent === 'trackCustom') {
+            fbq('trackCustom', eventName, fbParams);
+        } else {
+            fbq('track', fbEvent, fbParams);
+        }
+        
+        console.log('FB Event:', fbEvent, fbParams);
     }
 }
 
@@ -235,6 +258,16 @@ function openModal(productName, price) {
     
     // Initialize total
     updateTotal();
+    
+    // Track evento Facebook Pixel - InitiateCheckout
+    if (typeof fbq !== 'undefined') {
+        fbq('track', 'InitiateCheckout', {
+            content_name: productName,
+            content_category: 'Power Tools',
+            value: price,
+            currency: 'COP'
+        });
+    }
 }
 
 function closeModal() {
